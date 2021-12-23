@@ -198,7 +198,7 @@ func B(path string) {
 
 	var max_magnitude int
 	for i := 0; i < len(all_nums)-1; i++ {
-		for j := 1; j < len(all_nums); j++ {
+		for j := i + 1; j < len(all_nums); j++ {
 			// This is so inefficient... not sure how to work with pointers so creating new structs
 			// every iteration
 			num_1 := parseSnailNum(all_nums[i])
